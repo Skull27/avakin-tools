@@ -19,9 +19,9 @@ print('''
 
 # Auth, put your avakin life email address in the Email field, your password in the Password field & the target's username/friend code in the User_id field... enjoy!
 #===================================================
-Email = "admin5@avakin.me"
-Password = "youcanthackme"
-User_id = "TWY-LWP"
+Email = "your_email_address"
+Password = "your_password"
+User_id = "friend_code_of_victim"
 #===================================================
 
 hash_object = hashlib.md5(Password.encode())
