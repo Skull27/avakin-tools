@@ -19,9 +19,9 @@ print('''
 
 # Auth, put your avakin life email address in the Email field, your password in the Password field & the target's username/friend code in the User_id field... enjoy!
 #===================================================
-Email = "your_email_address"
-Password = "your_password"
-User_id = "friend_code_of_victim"
+Email = "admin5@avakin.me"
+Password = "youcanthackme"
+User_id = "TWY-LWP"
 #===================================================
 
 hash_object = hashlib.md5(Password.encode())
@@ -45,13 +45,19 @@ id_From_Response1 = r["results"][0]['id']
 
 big = {"widgets":{"main":{"profile":{"user_id":int(id_From_Response1)},"xp":{"user_id":int(id_From_Response1)},"item_stats":{"user_id":int(id_From_Response1)}}}}
 
+big2 = {"user_ids":[int(id_From_Response1)]}
+
 # Settings, set id of second response
 r2 = s.post("https://api.avkn.co/profile/1/profile/1/data", json=big, headers=Logincookies, timeout=1000, verify=cert)
+
+r3 = s.post("https://api.avkn.co/ws/1/lastseen/1/get", json=big2, headers=Logincookies, timeout=1000, verify=cert)
 
 pfp = ("Profile picture = https://profile.avkn.life/pass.php?soq=" + id_From_Response1)
 print ("========================================================================")
 print (pfp)
 print ("========================================================================")
+pprint (r3.content)
+print ("========================================================================")
 r2 = json.loads(r2.content)
-pprint(r2, width=3)
+pprint(r2, width=2)
 print ("========================================================================")
