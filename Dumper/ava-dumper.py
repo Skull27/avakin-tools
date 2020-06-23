@@ -19,9 +19,9 @@ print('''
 
 # Auth, put your avakin life email address in the Email field, your password in the Password field & the target's username/friend code in the User_id field... enjoy!
 #===================================================
-Email = "example@email.com"
-Password = "password"
-User_id = "friend_code_username"
+Email = "admin5@avakin.me"
+Password = "youcanthackme"
+User_id = "TWY-LWP"
 #===================================================
 
 hash_object = hashlib.md5(Password.encode())
@@ -53,12 +53,18 @@ r2 = s.post("https://api.avkn.co/profile/1/profile/1/data", json=big, headers=Lo
 r3 = s.post("https://api.avkn.co/ws/1/lastseen/1/get", json=big2, headers=Logincookies, timeout=1000, verify=cert)
 r3 = json.loads(r3.text)
 
+class bcolors:
+    OKBLUE = '\033[94m'
+    OKGREEN = '\033[92m'
+    ENDC = '\033[0m'
+
 pfp = ("Profile picture = https://profile.avkn.life/pass.php?soq=" + id_From_Response1)
-print ("========================================================================")
+print (bcolors.OKGREEN + "SUCCESS!" + bcolors.ENDC)
+print (bcolors.OKGREEN + "========================================================================" + bcolors.ENDC)
 print (pfp)
-print ("========================================================================")
+print (bcolors.OKGREEN + "========================================================================" + bcolors.ENDC)
 pprint (r3)
-print ("========================================================================")
+print (bcolors.OKGREEN + "========================================================================" + bcolors.ENDC)
 r2 = json.loads(r2.content)
 pprint(r2)
-print ("========================================================================")
+print (bcolors.OKGREEN + "========================================================================" + bcolors.ENDC)
