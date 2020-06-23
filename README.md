@@ -4,10 +4,13 @@ These are a bunch of simple python scripts that allow you to exploit certain bug
 general requirements:
 
 #Python3.x (https://www.python.org/downloads/)
-#Requests library (pip install requests)
+#Requests library, to install: type in cmd "pip install requests"
 
 tutorial: 
 https://cdn.sewncorp.com/file/1BSXp.gif
+
+# if you're on mobile or you don't know how to run it in the command prompt, you can use this online tool: https://repl.it/@sewnkin/WastefulDistantQueries#main.py
+
 
 Contact:
 
