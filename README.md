@@ -9,6 +9,8 @@ general requirements:
 tutorial: 
 https://cdn.sewncorp.com/file/1BSXp.gif
 
+#if you're on mobile or don't know how to run scripts via cmd, you can use this online python shell: https://repl.it/languages/python3
+
 Contact:
 
 discord: Sewnkin#7302
