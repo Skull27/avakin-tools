@@ -1,8 +1,7 @@
-#Avakin dumper, this script allows you to extract important and useful information about any player (like their username/id/hashtag/date registered/last seen etc...)
-#i don't store any data of any kind, the whole script is local & there's no ban risk either ;)
-#the output is messy a little i'll try to adjust it as much as i can in the next update, but hey. doesn't it make you feel like an og hacker!
+These are a bunch of simple python scripts that allow you to exploit certain bugs in the game or extract valuable information about players or about yourself!
+==i've provided a README.md file for every tool please read them==
 
-requirements:
+general requirements:
 
 #Python3.x (https://www.python.org/downloads/)
 #Requests library (pip install requests)
