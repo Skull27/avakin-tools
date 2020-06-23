@@ -1,0 +1,2 @@
+This tool allows you to view all the hidden and FULL statistics about your avakin account.
+#PLEASE NOTE: Some values would look like this "'date_created': 1583335123" the "1583335123" is the real date but converted to the Timestamp format, you have to convert it back manually by heading to (https://www.epochconverter.com/) and pasting the value (like 1583335123) and then the output should look like this: GMT: Wednesday, March 4, 2020 3:18:43 PM
