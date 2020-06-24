@@ -21,6 +21,7 @@ print('''
 #=================[LOGIN INFO]=======================
 Email = "example@email.com"
 Password = "your_password"
+#=================[TARGET ID]=======================
 User_id = "username_or_friendcode_oftarget"
 #==================[SETTINGS]========================
 url = "https://api.avkn.co/auth/1/auth/1/login"
